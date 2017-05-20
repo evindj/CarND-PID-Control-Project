@@ -2,6 +2,8 @@
 #define PID_H
 
 class PID {
+private:
+  void twiddle();
 public:
   /*
   * Errors
@@ -40,7 +42,7 @@ public:
   /*
   * Calculate the total PID error.
   */
-  double TotalError();
+  double getAlpha();
 };
 
 #endif /* PID_H */
